@@ -12,3 +12,11 @@ python run_parse_jpl_horizons_vectors.py ../step_1_collect_nasa_jpl_data/geo_301
 python run_parse_jpl_horizons_vectors.py ../step_1_collect_nasa_jpl_data/geo_499_hourly.txt >geo_499mars.json
 python run_parse_jpl_horizons_vectors.py ../step_1_collect_nasa_jpl_data/geo_599_hourly.txt >geo_599jupiter.json
 python run_parse_jpl_horizons_vectors.py ../step_1_collect_nasa_jpl_data/geo_699_hourly.txt >geo_699saturn.json
+
+python run_parse_jpl_horizons_observations.py ../step_1_collect_nasa_jpl_data/observe_10_hourly.txt >observe_10sun.json
+python run_parse_jpl_horizons_observations.py ../step_1_collect_nasa_jpl_data/observe_199_hourly.txt >observe_199mercury.json
+python run_parse_jpl_horizons_observations.py ../step_1_collect_nasa_jpl_data/observe_299_hourly.txt >observe_299venus.json
+python run_parse_jpl_horizons_observations.py ../step_1_collect_nasa_jpl_data/observe_301_hourly.txt >observe_301moon.json
+python run_parse_jpl_horizons_observations.py ../step_1_collect_nasa_jpl_data/observe_499_hourly.txt >observe_499mars.json
+python run_parse_jpl_horizons_observations.py ../step_1_collect_nasa_jpl_data/observe_599_hourly.txt >observe_599jupiter.json
+python run_parse_jpl_horizons_observations.py ../step_1_collect_nasa_jpl_data/observe_699_hourly.txt >observe_699saturn.json

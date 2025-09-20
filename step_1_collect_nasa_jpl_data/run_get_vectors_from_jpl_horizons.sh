@@ -11,6 +11,7 @@ CENTER="500@10"
 
 # PLANET (aka COMMAND):
 # 199 Mercury, 299 Venus, 399 Earth, 499 Mars, 599 Jupiter, 699 Saturn
+echo "Collect helio vectors for Planets (neither Sun nor Moon) hourly..."
 for PLANET in 199 299 399 499 599 699; do
   wget -q -O XXX "https://ssd.jpl.nasa.gov/api/horizons.api?COMMAND=${PLANET}&CENTER=${CENTER}&MAKE_EPHEM=YES&TABLE_TYPE=VECTORS&START_TIME=%27${START}%27&STOP_TIME=%27${STOP}%27&STEP_SIZE=%27${STEP}%27&REF_SYSTEM=ICRF&REF_PLANE=ECLIPTIC&OUT_UNITS=KM-S&VEC_CORR=NONE&CSV_FORMAT=YES"
   sed 's/\\n/\n/g' XXX >helio_${PLANET}_hourly.txt
@@ -27,6 +28,7 @@ CENTER="500@399"
 # rm XXX
 
 # Get all (but Earth) geocentric vectors for testing
+echo "Collect geocentric vectors for Planets and Moon (not Earth) hourly..."
 for PLANET in 10 199 299 301 499 599 699; do
   wget -q -O XXX "https://ssd.jpl.nasa.gov/api/horizons.api?COMMAND=${PLANET}&CENTER=${CENTER}&MAKE_EPHEM=YES&TABLE_TYPE=VECTORS&START_TIME=%27${START}%27&STOP_TIME=%27${STOP}%27&STEP_SIZE=%27${STEP}%27&REF_SYSTEM=ICRF&REF_PLANE=ECLIPTIC&OUT_UNITS=KM-S&VEC_CORR=NONE&CSV_FORMAT=YES"
   sed 's/\\n/\n/g' XXX >geo_${PLANET}_hourly.txt
@@ -34,33 +36,19 @@ for PLANET in 10 199 299 301 499 599 699; do
 done
 
 # Get all (but Earth) geocentric observations (such as ap. mag. and phase)
+echo "Collect observations for Planets and Moon (not Earth) hourly..."
 for PLANET in 10 199 299 301 499 599 699; do
   wget -q -O XXX "https://ssd.jpl.nasa.gov/api/horizons.api?COMMAND=${PLANET}&CENTER=${CENTER}&MAKE_EPHEM=YES&EPHEM_TYPE=OBSERVER&START_TIME=%27${START}%27&STOP_TIME=%27${STOP}%27&STEP_SIZE=%27${STEP}%27&QUANTITIES=9&REF_SYSTEM=ICRF&REF_PLANE=ECLIPTIC&CSV_FORMAT=YES"
   sed 's/\\n/\n/g' XXX >observe_${PLANET}_hourly.txt
   rm XXX
 done
 
-exit
+echo Done
 
-wget -q -O XXX "https://ssd.jpl.nasa.gov/api/horizons.api?COMMAND=${PLANET}&CENTER=${CENTER}&MAKE_EPHEM=YES&
-EPHEM_TYPE=OBSERVER&
-START_TIME=%27${START}%27&STOP_TIME=%27${STOP}%27&STEP_SIZE=%27${STEP}%27&
-QUANTITIES=9&
-REF_SYSTEM=ICRF&REF_PLANE=ECLIPTIC&
-CSV_FORMAT=YES"
-
-wget -q -O XXX "https://ssd.jpl.nasa.gov/api/horizons.api?COMMAND=${PLANET}&CENTER=${CENTER}&MAKE_EPHEM=YES&
-TABLE_TYPE=VECTORS&
-START_TIME=%27${START}%27&STOP_TIME=%27${STOP}%27&STEP_SIZE=%27${STEP}%27&
-REF_SYSTEM=ICRF&REF_PLANE=ECLIPTIC&
-OUT_UNITS=KM-S&VEC_CORR=NONE&
-CSV_FORMAT=YES"
-
-New query contains
-EPHEM_TYPE=OBSERVER &
-QUANTITIES=9 &
-
-but does not contain:
-
-OUT_UNITS=KM-S &
-VEC_CORR=NONE &
+#
+# Consider QUANTITIES=1,9 or QUANTITIES=4,9 to get more info like:
+#
+# QUANTITIES  Data included
+#     1           RA, DEC, range
+#     4           AZ/EL, airmass, range
+#     9           Mag, illumination, phase angle
