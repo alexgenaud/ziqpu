@@ -1,41 +1,47 @@
 import json
 import re
 import sys
+from datetime import datetime
+
 
 def parse_vectors(file_path):
-    with open(file_path, 'r') as f:
+    with open(file_path, "r") as f:
         raw = f.read()
 
     # Replace escaped newlines with real newlines
-    raw = raw.replace('\\n', '\n')
+    raw = raw.replace("\\n", "\n")
 
     # Extract block between $$SOE and $$EOE
-    match = re.search(r'\$\$SOE(.*?)\$\$EOE', raw, re.DOTALL)
+    match = re.search(r"\$\$SOE(.*?)\$\$EOE", raw, re.DOTALL)
     if not match:
         raise ValueError("Vector data block not found in file.")
 
     data_block = match.group(1).strip()
     parsed_data = []
     for line in data_block.splitlines():
-        fields = [f.strip() for f in line.split(',')]
+        fields = [f.strip() for f in line.split(",")]
         if len(fields) < 6:
             continue
 
         jdtdb = float(fields[0])
-        calendar_date = fields[1]
+        calendar_date = None
+        raw_date = fields[1].replace("A.D. ", "")
+        try:
+            dt = datetime.strptime(raw_date, "%Y-%b-%d %H:%M:%S.%f")
+            calendar_date = dt.strftime("%Y-%m-%d %H:%M")
+        except ValueError:
+            calendar_date = raw_date  # fallback
+
         x = float(fields[2])
         y = float(fields[3])
         z = float(fields[4])
 
-        parsed_data.append({
-            'jdtdb': jdtdb,
-            'date': calendar_date,
-            'x': x,
-            'y': y,
-            'z': z
-        })
+        parsed_data.append(
+            {"jdtdb": jdtdb, "date": calendar_date, "x": x, "y": y, "z": z}
+        )
 
     return parsed_data
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
