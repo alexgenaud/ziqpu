@@ -1,0 +1,13 @@
+We do not need "date" for every hour, nor day
+
+geo_10sun
+x, y, z change by 100k (of 26m) km per hour
+
+
+
+observe_10sun
+apmag changes 0.001 after several days
+
+
+
+

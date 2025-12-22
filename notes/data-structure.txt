@@ -1,0 +1,21 @@
+for each year where x, y, z are heliocentric for all planets except the "moon" whose x, y, z are geocentric. All long, lat, and apmag are geocentric. "greg" is gregorian date
+
+"start_date": {"jdtdb": 2451500.5, "greg": "2000-01-01 00:00"},
+"end_date": {"jdtdb": 2451865.49, "greg": "2001-01-01 23:00"},
+"mar_eqx": {"long": 0.01, "lat": 0.0001, "jdtdb": 2451544.45, "greg": "2000-03-20 12:34:56"},
+"jun_sol": {"long": 90.01, "lat": 0.0001, "jdtdb": 2451634.45, "greg": "2000-06-20 12:34:56"},
+"sep_eqx": {"long": 180.01, "lat": 0.0001, "jdtdb": 2451724.45, "greg": "2000-09-20 12:34:56"},
+"dec_sol": {"long": 270.01, "lat": 0.0001, "jdtdb": 2451814.45, "greg": "2000-12-20 12:34:56"},
+"venus": [
+    {"jdtdb": 2451500.5, "x": 1234567, "y": 2345678, "z": 345, "long": 0.01, "lat": 0.0001, "apmag": -5.123},
+    ...,
+    {"jdtdb": 2451865.5, "x": 3456712, "y": 1234567, "z": 123, "long": 0.01, "lat": 0.0001, "apmag": -5.123}]
+"earth": [
+    {"jdtdb": 2451500.5, "x": 1234567, "y": 2345678, "z": 345, "long": 0.01, "lat": 0.0001, "apmag": -5.123},
+    ...,
+    {"jdtdb": 2451865.5, "x": 3456712, "y": 1234567, "z": 123, "long": 0.01, "lat": 0.0001, "apmag": -5.123}]
+"moon": [
+    {"jdtdb": 2451500.50, "hour": 0, "x": 1234567, "y": 2345678, "z": 345, "long": 0.01, "lat": 0.0001, "apmag": -5.123},
+    ...,
+    {"jdtdb": 2451865.45833333, "hour": 23, "x": 3456712, "y": 1234567, "z": 123, "long": 0.01, "lat": 0.0001, "apmag": -5.123}]
+

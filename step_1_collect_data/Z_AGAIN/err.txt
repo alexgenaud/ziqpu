@@ -1,0 +1,11 @@
+sed: YYY: No such file or directory
+rm: YYY: No such file or directory
+rm: q_mar.txt: No such file or directory
+rm: q_jun.txt: No such file or directory
+rm: q_sep.txt: No such file or directory
+tail: q_jun.txt: No such file or directory
+head: q_sep.txt: No such file or directory
+tail: q_sep.txt: No such file or directory
+head: q_dec.txt: No such file or directory
+tail: q_dec.txt: No such file or directory
+rm: q_mar.txt: No such file or directory
