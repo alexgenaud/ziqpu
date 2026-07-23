@@ -1,0 +1,44 @@
+https://ssd.jpl.nasa.gov/horizons_batch.cgi?
+COMMAND='399'&
+CENTER='500@10'&
+MAKE_EPHEM='YES'&
+TABLE_TYPE='VECTORS'&
+START_TIME='1999-12-30 00:00'&
+STOP_TIME='2000-01-02 23:00'&
+STEP_SIZE='1 h'&
+REF_SYSTEM='J2000'&
+REF_PLANE='ECLIPTIC'&
+OUT_UNITS='AU-D'&
+VEC_CORR='NONE'&
+CSV_FORMAT='YES'
+
+COMMAND='399' → Earth
+
+CENTER='500@10' → Sun center (heliocentric)
+
+MAKE_EPHEM='YES' & TABLE_TYPE='VECTORS' → get state vectors
+
+STEP_SIZE='1 h' → hourly steps
+
+OUT_UNITS='AU-D' → distances in AU, times in days
+
+REF_SYSTEM='J2000', REF_PLANE='ECLIPTIC' → ecliptic of J2000 (so lat/long etc wrt that)
+
+VEC_CORR='NONE' → no light‐time or aberration correction; if you want apparent you can request LT or LT+S etc.
+
+You’d replace COMMAND='399' with each planet ID, e.g.:
+
+Sun: COMMAND='10' (?) or special code
+
+Mercury: 199
+
+Venus: 299
+
+Mars: 499
+
+Jupiter: 599
+
+Saturn: 699
+
+Moon: 301
+
