@@ -1,0 +1,218 @@
+{"signature":{"version":"1.2","source":"NASA/JPL Horizons API"},"result":"*******************************************************************************
+ Revised: July 31, 2013                  Sun                                 10
+
+ PHYSICAL PROPERTIES (updated 2024-Oct-30):
+  GM, km^3/s^2          = 132712440041.93938  Mass, 10^24 kg        = ~1988410
+  Vol. mean radius, km  = 695700              Volume, 10^12 km^3    = 1412000
+  Solar radius (IAU2015)= 695700 km           Mean density, g/cm^3  = 1.408
+  Radius (photosphere)  = 696500 km           Angular diam at 1 AU  = 1919.3\"
+  Photosphere temp., K  = 6600 (bottom)       Photosphere temp., K  = 4400(top)
+  Photospheric depth    = ~500 km             Chromospheric depth   = ~2500 km
+  Flatness, f           = 0.00005             Adopted sid. rot. per.= 25.38 d
+  Surface gravity       =  274.0 m/s^2        Escape speed, km/s    =  617.7
+  Pole (RA,DEC), deg.   = (286.13, 63.87)     Obliquity to ecliptic = 7.25 deg.
+  Solar constant (1 AU) = 1367.6 W/m^2        Luminosity, 10^24 J/s = 382.8
+  Mass-energy conv rate = 4.260 x 10^9 kg/s   Effective temp, K     = 5772
+  Sunspot cycle         = 11.4 yr             Cycle 24 sunspot min. = 2008 A.D.
+
+  Motion relative to nearby stars = apex : R.A.= 271 deg.; DEC.= +30 deg.
+                                    speed: 19.4 km/s (0.0112 au/day)
+  Motion relative to 2.73K BB/CBR = apex : l= 264.7 +- 0.8; b= 48.2 +- 0.5 deg.
+                                    speed: 369 +-11 km/s
+*******************************************************************************
+
+
+*******************************************************************************
+Ephemeris / API_USER Sat Sep 20 15:05:46 2025 Pasadena, USA      / Horizons    
+*******************************************************************************
+Target body name: Sun (10)                        {source: DE441}
+Center body name: Earth (399)                     {source: DE441}
+Center-site name: GEOCENTRIC
+*******************************************************************************
+Start time      : A.D. 2025-Mar-18 00:00:00.0000 UT      
+Stop  time      : A.D. 2025-Mar-22 00:00:00.0000 UT      
+Step-size       : 60 minutes
+*******************************************************************************
+Target pole/equ : IAU_SUN                         {East-longitude positive}
+Target radii    : 695700.0, 695700.0, 695700.0 km {Equator_a, b, pole_c}       
+Center geodetic : 0.0, 0.0, -6378.137             {E-lon(deg),Lat(deg),Alt(km)}
+Center cylindric: 0.0, 0.0, 0.0                   {E-lon(deg),Dxy(km),Dz(km)}
+Center pole/equ : ITRF93                          {East-longitude positive}
+Center radii    : 6378.137, 6378.137, 6356.752 km {Equator_a, b, pole_c}       
+Target primary  : Sun
+Vis. interferer : MOON (R_eq= 1737.400) km        {source: DE441}
+Rel. light bend : Sun                             {source: DE441}
+Rel. lght bnd GM: 1.3271E+11 km^3/s^2                                          
+Atmos refraction: NO (AIRLESS)
+RA format       : HMS
+Time format     : CAL 
+Calendar mode   : Mixed Julian/Gregorian
+EOP file        : eop.250919.p251216                                           
+EOP coverage    : DATA-BASED 1962-JAN-20 TO 2025-SEP-19. PREDICTS-> 2025-DEC-15
+Units conversion: 1 au= 149597870.700 km, c= 299792.458 km/s, 1 day= 86400.0 s 
+Table cut-offs 1: Elevation (-90.0deg=NO ),Airmass (>38.000=NO), Daylight (NO )
+Table cut-offs 2: Solar elongation (  0.0,180.0=NO ),Local Hour Angle( 0.0=NO )
+Table cut-offs 3: RA/DEC angular rate (     0.0=NO )                           
+Table format    : Comma Separated Values (spreadsheet)
+*******************************************************************************
+ Date__(UT)__HR:MN, , ,    ObsEcLon,   ObsEcLat,
+************************************************
+$$SOE
+ 2025-Mar-18 00:00, , , 357.6380198, -0.0001516,
+ 2025-Mar-18 01:00, , , 357.6794635, -0.0001528,
+ 2025-Mar-18 02:00, , , 357.7209064, -0.0001539,
+ 2025-Mar-18 03:00, , , 357.7623485, -0.0001551,
+ 2025-Mar-18 04:00, , , 357.8037897, -0.0001562,
+ 2025-Mar-18 05:00, , , 357.8452300, -0.0001573,
+ 2025-Mar-18 06:00, , , 357.8866695, -0.0001584,
+ 2025-Mar-18 07:00, , , 357.9281081, -0.0001595,
+ 2025-Mar-18 08:00, , , 357.9695459, -0.0001606,
+ 2025-Mar-18 09:00, , , 358.0109828, -0.0001617,
+ 2025-Mar-18 10:00, , , 358.0524189, -0.0001628,
+ 2025-Mar-18 11:00, , , 358.0938541, -0.0001638,
+ 2025-Mar-18 12:00, , , 358.1352885, -0.0001649,
+ 2025-Mar-18 13:00, , , 358.1767220, -0.0001659,
+ 2025-Mar-18 14:00, , , 358.2181547, -0.0001669,
+ 2025-Mar-18 15:00, , , 358.2595866, -0.0001680,
+ 2025-Mar-18 16:00, , , 358.3010176, -0.0001690,
+ 2025-Mar-18 17:00, , , 358.3424477, -0.0001700,
+ 2025-Mar-18 18:00, , , 358.3838770, -0.0001710,
+ 2025-Mar-18 19:00, , , 358.4253054, -0.0001719,
+ 2025-Mar-18 20:00, , , 358.4667330, -0.0001729,
+ 2025-Mar-18 21:00, , , 358.5081598, -0.0001739,
+ 2025-Mar-18 22:00, , , 358.5495857, -0.0001748,
+ 2025-Mar-18 23:00, , , 358.5910108, -0.0001757,
+ 2025-Mar-19 00:00, , , 358.6324350, -0.0001767,
+ 2025-Mar-19 01:00, , , 358.6738584, -0.0001776,
+ 2025-Mar-19 02:00, , , 358.7152810, -0.0001785,
+ 2025-Mar-19 03:00, , , 358.7567027, -0.0001794,
+ 2025-Mar-19 04:00, , , 358.7981235, -0.0001803,
+ 2025-Mar-19 05:00, , , 358.8395435, -0.0001811,
+ 2025-Mar-19 06:00, , , 358.8809627, -0.0001820,
+ 2025-Mar-19 07:00, , , 358.9223811, -0.0001828,
+ 2025-Mar-19 08:00, , , 358.9637986, -0.0001837,
+ 2025-Mar-19 09:00, , , 359.0052152, -0.0001845,
+ 2025-Mar-19 10:00, , , 359.0466311, -0.0001853,
+ 2025-Mar-19 11:00, , , 359.0880461, -0.0001861,
+ 2025-Mar-19 12:00, , , 359.1294602, -0.0001869,
+ 2025-Mar-19 13:00, , , 359.1708735, -0.0001877,
+ 2025-Mar-19 14:00, , , 359.2122860, -0.0001884,
+ 2025-Mar-19 15:00, , , 359.2536976, -0.0001892,
+ 2025-Mar-19 16:00, , , 359.2951084, -0.0001899,
+ 2025-Mar-19 17:00, , , 359.3365184, -0.0001907,
+ 2025-Mar-19 18:00, , , 359.3779275, -0.0001914,
+ 2025-Mar-19 19:00, , , 359.4193358, -0.0001921,
+ 2025-Mar-19 20:00, , , 359.4607433, -0.0001928,
+ 2025-Mar-19 21:00, , , 359.5021499, -0.0001935,
+ 2025-Mar-19 22:00, , , 359.5435557, -0.0001941,
+ 2025-Mar-19 23:00, , , 359.5849607, -0.0001948,
+ 2025-Mar-20 00:00, , , 359.6263648, -0.0001954,
+ 2025-Mar-20 01:00, , , 359.6677681, -0.0001961,
+ 2025-Mar-20 02:00, , , 359.7091705, -0.0001967,
+ 2025-Mar-20 03:00, , , 359.7505721, -0.0001973,
+ 2025-Mar-20 04:00, , , 359.7919729, -0.0001979,
+ 2025-Mar-20 05:00, , , 359.8333729, -0.0001985,
+ 2025-Mar-20 06:00, , , 359.8747720, -0.0001990,
+ 2025-Mar-20 07:00, , , 359.9161703, -0.0001996,
+ 2025-Mar-20 08:00, , , 359.9575678, -0.0002001,
+ 2025-Mar-20 09:00, , , 359.9989644, -0.0002006,
+ 2025-Mar-20 10:00, , ,   0.0403602, -0.0002012,
+ 2025-Mar-20 11:00, , ,   0.0817552, -0.0002017,
+ 2025-Mar-20 12:00, , ,   0.1231493, -0.0002022,
+ 2025-Mar-20 13:00, , ,   0.1645426, -0.0002026,
+ 2025-Mar-20 14:00, , ,   0.2059351, -0.0002031,
+ 2025-Mar-20 15:00, , ,   0.2473267, -0.0002035,
+ 2025-Mar-20 16:00, , ,   0.2887175, -0.0002040,
+ 2025-Mar-20 17:00, , ,   0.3301075, -0.0002044,
+ 2025-Mar-20 18:00, , ,   0.3714966, -0.0002048,
+ 2025-Mar-20 19:00, , ,   0.4128850, -0.0002052,
+ 2025-Mar-20 20:00, , ,   0.4542724, -0.0002056,
+ 2025-Mar-20 21:00, , ,   0.4956591, -0.0002060,
+ 2025-Mar-20 22:00, , ,   0.5370449, -0.0002063,
+ 2025-Mar-20 23:00, , ,   0.5784299, -0.0002067,
+ 2025-Mar-21 00:00, , ,   0.6198141, -0.0002070,
+ 2025-Mar-21 01:00, , ,   0.6611974, -0.0002073,
+ 2025-Mar-21 02:00, , ,   0.7025799, -0.0002076,
+ 2025-Mar-21 03:00, , ,   0.7439616, -0.0002079,
+ 2025-Mar-21 04:00, , ,   0.7853424, -0.0002082,
+ 2025-Mar-21 05:00, , ,   0.8267225, -0.0002084,
+ 2025-Mar-21 06:00, , ,   0.8681016, -0.0002087,
+ 2025-Mar-21 07:00, , ,   0.9094800, -0.0002089,
+ 2025-Mar-21 08:00, , ,   0.9508575, -0.0002091,
+ 2025-Mar-21 09:00, , ,   0.9922342, -0.0002093,
+ 2025-Mar-21 10:00, , ,   1.0336101, -0.0002095,
+ 2025-Mar-21 11:00, , ,   1.0749851, -0.0002097,
+ 2025-Mar-21 12:00, , ,   1.1163593, -0.0002098,
+ 2025-Mar-21 13:00, , ,   1.1577327, -0.0002100,
+ 2025-Mar-21 14:00, , ,   1.1991052, -0.0002101,
+ 2025-Mar-21 15:00, , ,   1.2404769, -0.0002102,
+ 2025-Mar-21 16:00, , ,   1.2818478, -0.0002104,
+ 2025-Mar-21 17:00, , ,   1.3232178, -0.0002104,
+ 2025-Mar-21 18:00, , ,   1.3645871, -0.0002105,
+ 2025-Mar-21 19:00, , ,   1.4059554, -0.0002106,
+ 2025-Mar-21 20:00, , ,   1.4473230, -0.0002106,
+ 2025-Mar-21 21:00, , ,   1.4886897, -0.0002107,
+ 2025-Mar-21 22:00, , ,   1.5300556, -0.0002107,
+ 2025-Mar-21 23:00, , ,   1.5714207, -0.0002107,
+ 2025-Mar-22 00:00, , ,   1.6127849, -0.0002107,
+$$EOE
+*******************************************************************************
+Column meaning:
+ 
+TIME
+
+  Times PRIOR to 1962 are UT1, a mean-solar time closely related to the
+prior but now-deprecated GMT. Times AFTER 1962 are in UTC, the current
+civil or \"wall-clock\" time-scale. UTC is kept within 0.9 seconds of UT1
+using integer leap-seconds for 1972 and later years.
+
+  Conversion from the internal Barycentric Dynamical Time (TDB) of solar
+system dynamics to the non-uniform civil UT time-scale requested for output
+has not been determined for UTC times after the next July or January 1st.
+Therefore, the last known leap-second is used as a constant over future
+intervals.
+
+  Time tags refer to the UT time-scale conversion from TDB on Earth
+regardless of observer location within the solar system, although clock
+rates may differ due to the local gravity field and no analog to \"UT\"
+may be defined for that location.
+
+  Any 'b' symbol in the 1st-column denotes a B.C. date. First-column blank
+(\" \") denotes an A.D. date.
+ 
+CALENDAR SYSTEM
+
+  Mixed calendar mode was active such that calendar dates after AD 1582-Oct-15
+(if any) are in the modern Gregorian system. Dates prior to 1582-Oct-5 (if any)
+are in the Julian calendar system, which is automatically extended for dates
+prior to its adoption on 45-Jan-1 BC.  The Julian calendar is useful for
+matching historical dates. The Gregorian calendar more accurately corresponds
+to the Earth's orbital motion and seasons. A \"Gregorian-only\" calendar mode is
+available if such physical events are the primary interest.
+
+  NOTE: \"n.a.\" in output means quantity \"not available\" at the print-time.
+ 
+ 'ObsEcLon,   ObsEcLat,' =
+   Observer-centered IAU76/80 ecliptic-of-date longitude and latitude of the
+target centers' apparent position, with light-time, gravitational deflection of
+light, and stellar aberrations.  Units: DEGREES
+
+Computations by ...
+
+    Solar System Dynamics Group, Horizons On-Line Ephemeris System
+    4800 Oak Grove Drive, Jet Propulsion Laboratory
+    Pasadena, CA  91109   USA
+
+    General site: https://ssd.jpl.nasa.gov/
+    Mailing list: https://ssd.jpl.nasa.gov/email_list.html
+    System news : https://ssd.jpl.nasa.gov/horizons/news.html
+    User Guide  : https://ssd.jpl.nasa.gov/horizons/manual.html
+    Connect     : browser        https://ssd.jpl.nasa.gov/horizons/app.html#/x
+                  API            https://ssd-api.jpl.nasa.gov/doc/horizons.html
+                  command-line   telnet ssd.jpl.nasa.gov 6775
+                  e-mail/batch   https://ssd.jpl.nasa.gov/ftp/ssd/horizons_batch.txt
+                  scripts        https://ssd.jpl.nasa.gov/ftp/ssd/SCRIPTS
+    Author      : Jon.D.Giorgini@jpl.nasa.gov
+
+*******************************************************************************
+"}
