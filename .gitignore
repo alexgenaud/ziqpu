@@ -1,0 +1,23 @@
+# ziqpu policy: code, docs, datasheets, and manifests are tracked;
+# bulk data and binary assets live in untracked/ (only its README is
+# tracked). See README "Repository policy" and untracked/README.md.
+
+/untracked/*
+!/untracked/README.md
+
+# regenerated raw/parsed data lands in the step dirs; keep it out of git
+step_1_collect_data/eqx_sol/*.txt
+step_1_collect_data/2025/
+step_2_massage_data/2025/*.json
+
+# Horizons scratch files left by collection scripts
+XXX
+YYY
+q_mar.txt
+q_jun.txt
+q_sep.txt
+q_dec.txt
+err.txt
+
+# OS noise
+.DS_Store
